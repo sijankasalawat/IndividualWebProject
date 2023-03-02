@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    background-color:#f7ecde;
+    color: #000000;
+    margin-top: 5px;
+    padding: 2%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .information {
+    width: 25%;
+    text-transform: capitalize;
+    /* background-color: red; */
+}
+footer .quicklinks {
+    width: 25%;
+    text-transform: capitalize;
+}
+.quicklinks p a:hover{
+    color:#e0e0e0;
+}
+footer .sociallinks {
+    width: 15%;
+    text-transform: capitalize;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+footer .emailcontact {
+    width: 25%;
+    text-transform: capitalize;
+
+    /* background-color: aqua; */
+}
+
+.information img {
+    /* height: 80px; */
+    width: 80px;
+}
+.information p a{
+    padding: 2%;
+    color: #000000;
+}
+
+
+.sociallinks{
+    display:flex;
+
+
+}
+.quicklinks p a{
+    padding: 2%;
+    color: #000000;
+}
+.sociallinks h4{
+    FONT-WEIGHT: 00;
+    padding: 5%;
+    height: 40px;
+    width: fit-content;
+}
+.sociallinks h4 a{
+    padding: 2%;
+    color: #000000;
+
+    /*background-color: red;*/
+}
+.sociallinks h4 a:hover{
+    color:#e0e0e0;
+}
+
+.email{
+
+    height: 45px;
+    background-color: var(--white);
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    border: 3px solid black;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+.emailcontact input{
+    padding-top: 5px;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    background:transparent;
+    border: 0px;
+    outline: none;
+}
+.email button {
+    background-color:white;
+    color: var(--black);
+    height: 100%;
+    font-size: 10px;
+    /* border:1px solid black; */
+    border: 0px;
+    background: transparent;
+}
+.email button a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+.email button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid white;
+}
+
+@media (max-width: 858px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .information {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .quicklinks {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .sociallinks {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .emailcontact {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+}

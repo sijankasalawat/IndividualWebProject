@@ -1,0 +1,203 @@
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhatti (Newari Cusine)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" th:href="@{~/images/logo-b.png}">
+    <link rel="stylesheet" th:href="@{~/css/booking.css}">
+    <script defer th:src="@{~/javascript/booking.js}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/booking.css}">
+<!--    <script defer th:src="@{~/javascript/disableDate.js}"></script>-->
+
+
+
+    <title>Order </title>
+</head>
+
+<body onload="myFunction()">
+<body style="display: flex;   justify-content: center;">
+
+<div class="container" style="align-self: center;">
+
+    <form  id="form" th:method="post" th:action="@{/user/savebook}" th:object="${booking}">
+        <h1>Order Now</h1>
+        <input type="number"   hidden="hidden" th:field="*{id}" th:value="${booking.id}">
+
+        <div class="input-control">
+
+            <label for="FullName">FullName</label>
+
+            <input id="FullName" name="FullName" type="text"  th:field="*{fullname}" th:value="${booking.fullname}">
+
+            <div class="error"></div>
+
+        </div>
+
+        <div class="input-control">
+
+            <label for="Phone">Phone</label>
+
+            <input id="Phone" name="Phone" type="number"  th:field="*{mobile_no}" th:value="${booking.mobile_no}">
+
+            <div class="error"></div>
+
+        </div>
+
+        <div class="input-control">
+
+            <label for="Menu"></label>
+
+            <select name="Menu" id="Menu"  th:field="*{room}" th:value="${booking.room}">
+
+                <option value="Choila">Cholia</option>
+
+                <option value="Couple Room">Couple</option>
+
+                <option value="Family Room">Family</option>
+
+                <option value="Group Room">Group</option>
+
+                <option value="Honeymoon Room">Honeymoon</option>
+
+            </select>
+
+            <div class="error"></div>
+
+        </div>
+
+        <div class="input-control">
+
+            <label for="Number">Delivery Destination</label>
+
+            <!-- <input id="Number"name="Number" type="number"> -->
+
+            <select  id="people"  th:field="*{number_of_people}" th:value="${booking.number_of_people}">
+
+                <option value="1">Bhaktapur</option>
+
+                <option value="2">Kathmandu</option>
+
+                <option value="3">Patan</option>
+
+                <option value="4">Banepa</option>
+
+                <option value="more">Kritipur</option>
+
+            </select>
+
+            <div class="error"></div>
+
+        </div>
+
+        <div class="input-control">
+
+            <label for="date">Check in</label>
+
+            <!-- <input id="date" name="date" type="number"> -->
+
+            <input type="date" name="date" id="checkInDate" placeholder="date"  th:field="*{checkin}" th:value="${booking.checkin}">
+
+            <div class="error"></div>
+
+        </div>
+
+
+<!--        Amount -->
+        <input type="text" hidden="hidden" id="amount" th:field="*{amount}" th:value="${booking.amount}">
+
+        <input type="text" hidden="hidden" id="date" th:field="*{date}" th:value="${booking.date}">
+        <input type="text" hidden="hidden" name="user_id" th:value="${info.id}">
+
+
+
+
+        <div class="input-control">
+
+            <label for="date">Check Out</label>
+
+            <!-- <input id="date" name="date" type="number"> -->
+
+            <input type="date" name="date" id="checkOutDate" placeholder="date"   th:field="*{checkout}" th:value="${booking.checkout}">
+            <div class="error"></div>
+
+        </div>
+        <!--                    <input type="submit" value="SUBMIT">-->
+        <div>
+            <button type="submit" onclick="myFunction()">Book Now</button>
+        </div>
+        <div>
+            <a th:href="@{~/homepage}">
+                <button type="button" style="background-color: red">Cancel</button>
+            </a>
+        </div>
+
+
+    </form>
+
+</div>
+
+<script>
+    function myFunction() {
+        let A = document.getElementById("Menu").value;
+            if(A=="Choila"){
+                console.log(200);
+                var val=document.getElementById("amount");
+                val.setAttribute("value","$200");
+            }
+            else if(A=="Couple Room"){
+                var val=document.getElementById("amount");
+                val.setAttribute("value","$300");
+            }
+            else if(A=="Family Room"){
+                var val=document.getElementById("amount");
+                val.setAttribute("value","$400");          }
+            else if(A=="Group Room"){
+                var val=document.getElementById("amount");
+                val.setAttribute("value","$500");          }
+            else{
+                var val=document.getElementById("amount");
+                val.setAttribute("value","$600");          }
+
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("checkInDate").setAttribute("min", today);
+        document.getElementById("checkOutDate").setAttribute("min", today);
+    });
+
+</script>
+<script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = yyyy + '/' + mm + '/' + dd;
+    var val=document.getElementById("date");
+    val.setAttribute("value",today);
+
+</script>
+</body>
+
+</html>

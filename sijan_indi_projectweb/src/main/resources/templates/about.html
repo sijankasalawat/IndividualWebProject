@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:style="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" th:href="@{~/css/footerStyle.css}">
+    <link rel="stylesheet" th:href="@{~/css/home_navigationStyle.css}">
+    <link rel="stylesheet" th:href="@{~/css/about.css}">
+
+
+
+
+</head>
+
+<body>
+<div th:replace="fragments/Navi_frag.html :: navigator"></div>
+
+
+<div class="main-body" style="text-align:start; ">
+    <div class="about-box">
+
+        <h1 >About Us</h1>
+
+
+    </div>
+    <div class="about-main">
+        <p>Bhatti (Newari Cuisine) is a unique and authentic food delivery website that specializes in Newari cuisine. Newari cuisine is a type of cuisine that is native to the Newar community of Nepal. It is known for its rich flavors, unique ingredients, and intricate cooking techniques.<br>
+
+            At Bhatti (Newari Cuisine), we are dedicated to bringing the traditional flavors of Newari cuisine to your doorstep. Our menu is carefully curated to offer a wide variety of dishes that are sure to satisfy your taste buds. From classic Newari dishes like Choila and Bara to lesser-known delicacies like Yomari and Lakhamari, we have something for everyone.
+
+            Our team of experienced chefs uses only the freshest and highest quality ingredients to prepare each dish. We take great care in ensuring that our food is not only delicious but also healthy and nutritious.
+
+            At Bhatti (Newari Cuisine), we understand that convenience is key. That's why we offer a seamless e-commerce platform that allows you to order your favorite dishes online and have them delivered straight to your doorstep. Our delivery service is fast, reliable, and efficient, ensuring that you receive your food in a timely manner.
+
+            Whether you're looking to explore the unique flavors of Newari cuisine or simply craving a delicious and nutritious meal, Bhatti (Newari Cuisine) is the perfect choice. Try us out today and experience the rich and authentic flavors of Nepal!</p>
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/Footer_frag.html :: footer"></div>
+
+</body>
+
+
+</html>

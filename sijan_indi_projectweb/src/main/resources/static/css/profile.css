@@ -1,0 +1,165 @@
+/* Styling for the section */
+.py-5 {
+
+
+    padding: 3rem 0;
+
+}
+
+.my-5 {
+
+    background-color:hsl(36, 100%, 99%)
+}
+/* Styling for the container */
+.container {
+    background-color:hsl(36, 100%, 99%);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-white{
+    background-color:#f9eddc;
+}
+/* Styling for the h1 heading */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* Styling for the background and rounded edges of the form */
+.bg-white {
+    background-color: #f9eddc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 15px;
+    margin: 2%;
+    align-items: stretch;
+    align-content: center;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 68%);
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.p-4{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+/* Styling for the profile tab navigation */
+.profile-tab-nav {
+    width: 20%;
+    min-width: 200px;
+    border-right: 1px solid #e9ecef;
+}
+/* Styling for the image and username text in the profile tab navigation */
+.img-circle {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+}
+.shadow img {
+    width: 100%;
+    height: auto;
+}
+
+.mb-4{
+    margin: 10px;
+}
+.row{
+    margin: 5px;
+    margin-bottom: 30px;
+}
+.col-md-6{
+    margin: 8px;
+    height: 70px;
+}
+.form-group{
+    margin: 8px;
+    display: grid;
+
+
+}
+/* Styling for the navigation links in the profile tab navigation */
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #495057;
+    text-align: center;
+
+}
+.nav-link.active {
+    background-color: #007bff;
+    color: white;
+
+}
+/* Styling for the form in the tab content */
+.form-control  {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #e9ecef;
+
+    font-family: Microsoft YaHei;
+}
+.form-group label{
+
+    font-family: Microsoft YaHei;
+    font-size:22px;
+
+
+}
+h4{
+    font-family: Microsoft YaHei;
+    font-size:26px;
+
+}
+/* Styling for the update and cancel buttons */
+button[type="submit"] {
+    background-color: #8f9193;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    margin: 10px;
+}
+button[type="submit"]:hover{
+    background-color:  hsl(222deg 85% 63%);
+    color: white;
+    box-shadow: 1px 2px 35px rgb(0 11 254 / 35%);
+}
+button[type="reset"] {
+    background-color:  hsl(5, 85%, 63%);
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 0px solid #e9ecef;
+}
+button[type="reset"]:hover{
+    background-color: hsl(5deg 71% 84%);
+    color: #ffffff;
+    box-shadow: 1px 2px 35px rgb(254 0 54 / 35%);
+}
+button a{
+
+    background-color:  hsl(5, 85%, 63%);
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border:none;
+    /*     border: 1px solid #e9ecef; */
+}
+button a:hover{
+    background-color:  hsl(5deg 71% 84%);
+    color: #ffffff;
+    box-shadow: 1px 2px 35px rgb(254 0 0 / 35%);
+}

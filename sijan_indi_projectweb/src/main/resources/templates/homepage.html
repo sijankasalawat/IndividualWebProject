@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title> BHATTI (Newari Cuisine) </title>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/638bfd91daff0e1306dacc54/1gjddd0do';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+
+
+  </script>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" type="x-icon" th:href="@{~/images/logo-b.png}">
+  <link rel="stylesheet" th:href="@{~/css/footerStyle.css}">
+  <link rel="stylesheet" th:href="@{~/css/home_navigationStyle.css}">
+  <link rel="stylesheet" th:href="@{~/css/HomepageStyle.css}">
+  <link rel="stylesheet" th:href="@{~/css/checkOffer.css}">
+  <!--    <link rel="stylesheet" th:href="@{~/css/homepageStyle.css}">-->
+
+</head>
+
+<body>
+<section>
+  <div th:replace="fragments/Navi_frag :: navigator"></div>
+
+
+  <section>
+    <div class="mid-body">
+      <div class="left-body">
+        <img th:src="@{~/images/home1.jpg}" />
+        <div class="lower_left">
+          <div><h>Welcome to our Bhatti (Newari Cuisine)</h></div>
+          <div>
+            <p>
+              "Indulge in the rich and authentic flavors of Newari cuisine at Bhatti - where every bite is a journey through the vibrant culture and heritage of Nepal."
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-body">
+        <h1>Special Item</h1>
+        <h2>Newari Set</h2>
+
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr />
+        <h2>Choila</h2>
+        <p>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+        <hr />
+        <h2>Bara and Yomari</h2>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </div>
+    </div>
+
+
+    </div>
+
+
+
+
+    <!-- image -->
+
+
+
+    <!--  -->
+    <!-- information div -->
+
+
+    <div class="Roominformation">
+      <div class="heading">
+        <h1>Accomodation</h1>
+      </div>
+      <div class="accommodation">
+        <div class="rooms">
+          <!-- <div id="zoom-in"> -->
+          <img th:src="@{~/images/premium4.jpg}" alt="Image Not Available">
+          <h2>Premium room</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consequatur enim, fuga quo esse
+            voluptatibus?</p>
+          <button><a th:href="@{~/rooms/premiumroom}">Details</a></button>
+          <!-- </div> -->
+        </div>
+        <div class="rooms">
+          <!-- <div id="zoom-in"> -->
+          <img th:src="@{~/images/coupleroom2.jpg}" alt="">
+          <!-- </div> -->
+          <h2>Couple room</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consequatur enim, fuga quo esse
+            voluptatibus?</p>
+          <button><a th:href="@{~/rooms/coupleroom}">Details</a></button>
+        </div>
+        <div class="rooms">
+          <!-- <div id="zoom-in"> -->
+          <img th:src="@{~/images/coupleroom2.jpg}" alt="">
+          <h2>Luxe room</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, consequatur enim, fuga quo esse
+            voluptatibus?</p>
+          <button><a th:href="@{~/rooms/luxeroom}">Details</a></button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+
+   <div class="about-us">
+     <h2>About Us</h2>
+     <h1>
+       Bhatti (Newari cusine) is the fastest, easiest and most convenient way to enjoy the best food of your favourite restaurants at home, at the office or wherever you want to.
+
+     </h1>
+     <h1>We know that your time is valuable and sometimes every minute in the day counts. That’s why we deliver! So you can spend more time doing the things you love.</h1>
+     <button><a th:href="@{~/homepage/about}" >read more</a>  </button>
+
+   </div>
+    <!-- reviews -->
+
+  </section>
+
+  <script>
+    const popup=document.querySelector('.popup');
+    const close=document.querySelector('.close');
+    window.onload = function(){
+      setTimeout(function(){
+        popup.style.display="block"
+      }, 5000)
+    }
+    close.addEventListener('click' , () => {
+      popup.style.display= "none";
+    })
+  </script>
+
+  <div class="suggest-problem">
+
+  </div>
+  <div class="container-fluid contact" >
+    <div class="container" id="contacts">
+      <form th:method="post" th:action="@{/user/savefeedback}" th:object="${feedback}">
+        <h2>Guest Experience Feedback</h2>
+        <input type="email" placeholder="Email"  class="full-half" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required th:field="*{email}" th:value="${feedback.email}">
+        <input type="text" placeholder="Name"   class="full-half" required th:field="*{fullname}" th:value="${feedback.fullname}">
+        <input type="text" placeholder="Subject"  class="full-half "required th:field="*{subject}" th:value="${feedback.subject}">
+        <input type="Message" placeholder="Message Us" class="full-half" required th:field="*{message}" th:value="${feedback.message}">
+        <input type="submit" class ="submit-bottom" onclick="allert()" value="Send">
+      </form>
+    </div>
+  </div>
+
+
+  <div th:replace="fragments/Footer_frag.html :: footer"></div>
+</section>
+<script>
+  function allert(){
+    alert("Successfully Submitted")
+  }
+</script>
+</body>
+
+
+<script>
+  let myPage = "homepage";
+  let listGroupItem = Array.from(document.getElementsByClassName("list-group-item"));
+  listGroupItem.forEach(i=>{
+    i.classList.remove("active")
+  })
+  let activeID = document.getElementById(myPage);
+  activeID.classList.add("active");
+</script>
+
+
+</html>

@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.whole-body{
+    display: flex;
+
+    /*background-color: #0b7dda;*/
+    /*width: 1300px;*/
+    /* background-color: aqua; */
+    /*height: 100%;*/
+    width:100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whole-body img{
+    width: 100%;
+    overflow: hidden;
+}
+.main-wrapper{
+    display: flex;
+    margin-top: -155px;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+.wrapper-left{
+    height: 650px;
+    width: 65%;
+    border-radius: 0px;
+}
+.box {
+    /* margin-left: 100px; */
+    width: 90%;
+    /* background-color: aqua; */
+    height: 1100px;
+    position: absolute;
+    align-items: center;
+
+
+    /*display: flex; */
+
+    /* border-style: ; */
+}
+.head-box {
+    text-align: center;
+    height: 30%;
+}
+.head-box h1 {
+    margin-top: -50px;
+    /*margin-bottom: 150px;*/
+
+
+    font-weight: 600;
+    font-size: 70px;
+    font-family: "Segoe Print";
+    color: rgb(255, 254, 254);
+    text-shadow: 5px 5px 10px #2d2d2de2;
+}
+.head-box p {
+
+    font-family: "Brush Script MT";
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+}
+.login-image{
+    width: 100%;
+    height: 100%;
+}
+.wrapper-right{
+    width: 35%;
+    height:650px;
+    border-radius: 0px;
+    background: rgba(52, 51, 51, 0.537);
+    /*margin: 20px;*/
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.h2{
+    padding: 20px;
+    font-family: Microsoft YaHei;
+    color: rgb(250, 244, 244);
+    font-size: 50px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+}
+.h3-1{
+    font-family: Microsoft YaHei;
+    color: rgb(250, 244, 244);
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.email-box{
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+    padding-left: 5px;
+    /* text-align:left; */
+
+    /* border-color: #2d2d2de2; */
+    /* text-decoration: none; */
+    border-radius: 0px;
+    border: 0px;
+}
+.password-box{
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+    padding-left: 5px;
+    /* text-align:left; */
+
+    /* border-color: #2d2d2de2; */
+    /* text-decoration: none; */
+    border-radius: 0px;
+    border: 0px;
+}
+.reminder{
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px 0 20px;
+}
+.a-1{
+    font-family: Microsoft YaHei;
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.a-1:hover{
+    color: #efe8e8;
+}
+.login-button{
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+    border:0px;
+    height: 60px;
+    width: 90%;
+    font-family: Microsoft YaHei;
+    color: rgb(250, 244, 244);
+    font-size: 20px;
+    margin:20px;
+    padding-left: 5px;
+}
+.login-button:hover{
+    background-color: rgb(74, 75, 75);
+}
+.h3-2{
+    font-family: Microsoft YaHei;
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+    margin-bottom: 20px;
+    padding-left:20px ;
+
+}
+.a-2{
+    font-family: Microsoft YaHei;
+    color: rgb(180, 180, 180);
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #2d2d2de2;
+    margin-bottom: 20px;
+    /*padding-left: 20px;*/
+}
+.a-2:hover{
+    color: #efe8e8;
+}
+
+
+@media only screen and (max-width:376px) {
+    .whole-body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .whole-body img {
+        height: 100%;
+
+    }
+
+    .main-wrapper {
+
+        display: block;
+    }
+
+    .wrapper-left {
+        display: none;
+    }
+
+    .wrapper-right {
+        paddding-top: 100px;
+
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .box {
+        padding-top: 400px;
+        /*         height:90%; */
+
+
+    }
+
+    .password-box {
+        height: 40px;
+        font-size: 16px;
+
+    }
+
+    .email-box {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .a-2 {
+        font-size: 18 pxk
+    }
+
+    .login-button {
+        height: 40px;
+    }
+
+    .h3-2 {
+        font-size: 18px;
+    }
+
+    .head-box {
+        display: none;
+    }
+
+    .a-2 {
+        font-size: 18px;
+
+    }
+
+    .a-1 {
+        font-size: 18px;
+    }
+}

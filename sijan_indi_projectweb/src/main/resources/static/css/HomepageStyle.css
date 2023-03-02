@@ -1,0 +1,453 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.Roominformation .heading{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Roominformation .accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.images-sec{
+    width: 100%;
+
+    background-color: #ffffff;
+    height: 500px;
+}
+.images-sec img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.covers{
+
+    position: absolute;
+    text-align: center;
+}
+.covers h1{
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Segoe Print";
+    color: rgb(255, 254, 254);
+    text-shadow: 5px 5px 10px #2d2d2de2;
+
+}
+.covers h2 {
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Segoe Print";
+    color: rgb(255, 254, 254);
+    text-shadow: 5px 5px 10px #2d2d2de2;
+
+}
+.covers h3 {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: "Segoe Print";
+    color: rgb(255, 254, 254);
+    text-shadow: 5px 5px 10px #2d2d2de2;
+
+}
+.covers p{
+
+    font-family: "Brush Script MT";
+    color: rgb(255 255 255);
+    font-size: 40px;
+    text-shadow: 5px 5px 10px #000000e2;
+
+
+}
+.Roominformation .accommodation .rooms {
+    width: 400px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+.Roominformation .accommodation .rooms:hover, .readBlogs .blog_read:hover {
+    border: 0.5px solid black;
+}
+
+.Roominformation .accommodation .rooms img {
+    width: 100%;
+}
+
+
+.Roominformation .accommodation .rooms button {
+    background: transparent;
+    cursor: pointer;
+    padding-top: 15px;
+    border: 0px;
+}
+
+.Roominformation .accommodation .rooms button a {
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+.Roominformation .accommodation .rooms button a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/*
+.rooms #zoom-in img{
+  transform: scale(1);
+  transition: 0.3s ease-out;
+}
+
+.rooms #zoom-in:hover img{
+  transform: scale(1.05);
+} */
+
+.CheckGallery, .reviews, .readBlogs{
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.CheckGallery .GalleryPic {
+    width: 100%;
+    font-size: 15px;
+    padding: 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CheckGallery .GalleryPic img {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.CheckGallery .GalleryPic button{
+    background: transparent;
+    padding-top: 15px;
+    border: 0px;
+    margin: 20px;
+}
+.CheckGallery .GalleryPic button a {
+    background-color: var(--white);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+}
+.CheckGallery .GalleryPic button a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+.mid-body {
+
+    display: flex;
+    padding:1% 2%;
+    height: 550px;
+    width: 100%;
+    background-color: hsl(36, 100%, 99%);
+    /* padding: 10px; */
+    /* justify-content: space-between; */
+    /* width: 1440px; */
+}
+.left-body {
+    /*display: flex;*/
+    background-color: hsl(36, 100%, 99%);
+    height: 100%;
+    width: 70%;
+}
+.left-body img {
+    width: 100%;
+    height: 60%;
+}
+.lower_left {
+    height:40%;
+    display: flex;
+    /* padding-left: 40px; */
+    /* margin-left: 0px; */
+    padding-top: 20px;
+    /* padding-right: 20px; */
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.lower_left div:nth-child(1) {
+    width: 30%;
+    height:100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Brush Script MT";
+    font-size: 30px;
+    /* font-style: bold; */
+}
+
+.lower_left div:nth-child(2) {
+    width:70%;
+    align-content: flex-start;
+
+
+}
+.lower_left div:nth-child(2) button:hover{
+    background-color: hsl(5, 86%, 71%);
+
+}
+.lower_left div:nth-child(2) p {
+    font-size: 22px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.lower_left div:nth-child(2) button {
+    /* padding-top: 10px; */
+    color: aliceblue;
+    background-color: hsl(5, 85%, 63%);
+    /* justify-content:baseline; */
+    /* display: flex; */
+    width: 150px;
+    height: 40px;
+    border-color: hsl(5, 85%, 63%);
+    box-shadow: none;
+    margin-top: 2%;
+
+}
+.right-body {
+    background-color: hsl(240, 100%, 7%);
+    height: 100%;
+    width: 30%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* padding: 20px; */
+
+}
+
+.lower-body {
+    padding-top: 30px;
+    /* justify-content: space-between; */
+    display: flex;
+    /* justify-content:space-around; */
+    flex-direction: row;
+
+    /* display: flex; */
+    /* padding-right: 250px; */
+}
+/* .lower-body div{
+  padding-right:300px;
+} */
+.right-body h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+    font-size:24px;
+    /* text-decoration: bold; */
+    /* font-display: ; */
+}
+.right-body h2 {
+    font-weight: 600;
+    color: aliceblue;
+    /* padding-inline-start: 10px; */
+    align-content: space-around;
+    padding: 1%
+}
+.right-body p {
+    font-weight: 400;
+    color: aliceblue;
+    padding: 1%;
+    /* padding-top: 10px; */
+    /* text-decoration: underline; */
+}
+.right-body hr {
+    /* border: none; */
+    height: 1px;
+    background: rgb(255, 255, 255);
+}
+/* .lower-body div div{
+  display:flex; */
+
+/* } */
+.lower-img {
+    display: flex;
+
+    /* margin-right: 10px; */
+
+    /* justify-content: space-between; */
+}
+.lower-img div:nth-child(2) h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 24px;
+    color:hsl(233, 8%, 79%) ;
+}
+.lower-img div {
+    padding-right: 20px;
+}
+.lower-img div:nth-child(2) h2,p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 24px; */
+}
+.about-us{
+    height: fit-content;
+
+    width:100%;
+    background-image:url("../images/2.jpg");
+    align-items: center;
+    text-align: center;
+}
+.about-us button{
+    color: aliceblue;
+    background-color: hsl(5, 85%, 63%);
+    /* justify-content:baseline; */
+    /* display: flex; */
+    width: 150px;
+    height: 40px;
+    border-color: hsl(5, 85%, 63%);
+    box-shadow: none;
+    margin-top: 2% ;
+    margin-bottom:20px;
+
+}
+.about-us button:hover{
+    background-color: hsl(5, 86%, 71%);
+
+}
+.about-us h1{
+    color:white;
+
+}
+.about-us h2{
+    padding-top:20px;
+    color:white;
+}
+.fab, .far {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px;
+}
+.container{
+    height:fit-content;
+    width:100%;
+    background-color:hsl(36, 100%, 99%);
+}
+.container h2{
+    padding:20px;
+    color:#383838;
+}
+.full-half{
+    height:30px;
+    background-color:antiquewhite;
+    margin:20px;
+    padding-left:5px;
+    border:1px solid;
+}
+.submit-bottom{
+    height:30px;
+    width:150px;
+    margin-left:20px;
+    border-color: hsl(5, 85%, 63%);
+    box-shadow: none;
+    border:0;
+    color: aliceblue;
+    background-color: hsl(5, 85%, 63%);
+}
+.submit-bottom:hover{
+    background-color: hsl(5, 86%, 71%);
+
+}
+@media only screen and (max-width:375px) {
+    .mid-body {
+        margin: 0;
+        display: block;
+        height: max-content;
+        width: 100%;
+
+    }
+
+    .mid-body img {
+        width: 150%;
+    }
+
+    .lower_left {
+        width: 150%;
+        /*     width:max-content; */
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lower_left div:nth-child(1) {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        font-weight: 400;
+        font-family: "Brush Script MT";
+        font-size: 18px;
+    }
+
+    .lower_left div:nth-child(2) {
+        width: 100%;
+
+    }
+
+    .lower_left div:nth-child(2) p {
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .right-body {
+        width: 100%;
+
+        margin: 10% 0 0 0;
+    }
+
+    .right-body h1, h2 {
+        font-size: 18px;
+    }
+
+    .right-body p {
+        font-size: 14px;
+    }
+    .about-us h1{
+        padding-top:5px;
+        font-size:14px;
+    }
+    .about-us{
+        height:fit-content;
+    }
+    .about-us h2{
+        padding-top:5px;
+        font-size:18px;
+    }
+    .about-us button{
+        height:30px;
+        width:120px;
+        font-size:14px;
+        margin-bottom:20px;
+    }
+
+
+}
+

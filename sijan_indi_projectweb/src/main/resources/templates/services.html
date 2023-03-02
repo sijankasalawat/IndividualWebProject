@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script th:src="@{/javascript/script.js}" defer></script>
+  <link rel="stylesheet" th:href="@{~/css/home_navigationStyle.css}">
+  <link rel="stylesheet" th:href="@{~/css/footerStyle.css}">
+  <link rel="shortcut icon" type="x-icon" th:href="@{~/images/logo-b.png}">
+  <link th:href="@{/css/tabstyle.css}" rel="stylesheet">
+  <link rel="shortcut icon" type="x-icon" href="../static/images/ServicesImages/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Menu </title>
+
+</head>
+
+<body>
+
+<div th:replace="fragments/Navi_frag.html :: navigator"></div>
+
+  <div class="about-section">
+    <div class="topic-heading">
+      <h1>Our Services</h1>
+    </div>
+    <p>The luxury of being yourself.</p>
+  </div>
+
+  <br>
+  <section style="
+    margin-top: 30px;
+    margin-bottom: 100px;">
+    <ul class="tabs">
+      <li data-tab-target="#pickup" class="tab">Pickup</li>
+      <li data-tab-target="#Gym" class="tab">gym</li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="pickup" data-tab-content>
+        <div class="maindiv">
+            <div class="section">
+              <div >
+              <figure>
+                <img th:src="@{~/images/taxi.jpg}" alt="">
+              </figure>
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div >
+              <figure>              <img th:src="@{~/images/hilux.jpg}" alt="">
+              </figure>
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div>
+              <figure>              <img th:src="@{~/images/scorpio.jpeg}" alt="">
+              </figure>
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Gym" data-tab-content>
+        <div class="maindiv">
+            <div class="section">
+              <div>
+              <img th:src="@{~/images/ServicesImages/gym1.jpg}" alt="">
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div>
+              <img th:src="@{~/images/ServicesImages/gym2.jpg}"  alt="">
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div >
+              <img th:src="@{~/images/ServicesImages/gym3.jpg}"  alt="">
+              <div class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam fugiat velit ad, culpa itaque
+                dolor
+                molestiae unde ipsa aspernatur! Dolorum iure commodi numquam temporibus quibusdam esse repudiandae
+                repellendus fugit!
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet qui, distinctio hic consectetur
+                soluta
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div th:replace="fragments/Footer_frag.html :: footer"></div>
+
+</body>
+
+<script>
+  let myPage = "services";
+  let listGroupItem = Array.from(document.getElementsByClassName("list-group-item"));
+  listGroupItem.forEach(i=>{
+    i.classList.remove("active")
+  })
+  let activeID = document.getElementById(myPage);
+  activeID.classList.add("active");
+</script>
+
+</html>

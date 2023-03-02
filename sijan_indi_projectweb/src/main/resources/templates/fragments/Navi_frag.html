@@ -1,0 +1,20 @@
+<div th:fragment="navigator">
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo"> <a th:href="@{/homepage}"><img th:src="@{~/images/logo-b.png}" alt=""></a></label>
+    <ul>
+      <li><a class="list-group-item active" id="homepage"  th:href="@{~/homepage}">Home</a></li>
+      <li><a th:href="@{~/homepage/about}" class="list-group-item" id="about">About</a></li>
+      <li><a th:href="@{~/homepage/services}" class="list-group-item" id="menu">Menu</a></li>
+      <li><a th:href="@{#contacts}" class="list-group-item" >Feedback</a></li>
+      <li><a  th:href="@{~/homepage/profile}" class="list-group-item" id="profile">Profile</a></li>
+
+
+
+    </ul>
+  </nav>
+
+</div>

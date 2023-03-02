@@ -1,0 +1,235 @@
+:root{
+	font-size: 100%;
+	font-size: 16px;
+	line-height:1.5;
+	--primary-blue: #233975;
+}
+*{
+	margin:0
+}
+body{
+	overflow: hidden;
+}
+.whole-body{
+	display: flex;
+	margin:0;
+
+	/*background-color: #0b7dda;*/
+	/*width: 1300px;*/
+	/* background-color: aqua; */
+	/*height: 100%;*/
+	width:100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.whole-body img{
+	width: 100%;
+}
+.head-box h1 {
+	margin-top: -50px;
+	/*margin-bottom: 150px;*/
+
+
+	font-weight: 600;
+	font-size: 70px;
+	font-family: "Segoe Print";
+	color: rgb(255, 254, 254);
+	text-shadow: 5px 5px 10px #2d2d2de2;
+}
+.head-box p {
+
+	font-family: "Brush Script MT";
+	color: rgb(255, 255, 255);
+	font-size: 50px;
+	text-shadow: 5px 5px 10px #2d2d2de2;
+}
+
+.main{
+	display: flex;
+	/* 	margin-top: -155px; */
+	height: 65%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+
+}
+.box{
+
+	width: 90%;
+	/* background-color: aqua; */
+	height: 1100px;
+	position: absolute;
+	align-items: center;
+	text-align:center
+}
+.left{
+	text-align: right;
+	height: 100%;
+	width: 65%;
+	border-radius: 0px;
+}
+.left .img{
+	height:100%;
+	width: 100%;
+}
+.right{
+	height: 100%;
+	width:35%;
+	border-radius: 0px;
+	background: rgba(52, 51, 51, 0.537);
+	text-align:center;
+}
+
+.right .h3{
+	padding: 20px;
+	font-family: Microsoft YaHei;
+	color: rgb(250, 244, 244);
+	font-size: 50px;
+	text-shadow: 5px 5px 10px #2d2d2de2;
+}
+.right .name{
+	margin: 20px;
+	width: 90%;
+	height: 60px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	padding-left: 5px;
+	/* text-align:left; */
+
+	/* border-color: #2d2d2de2; */
+	/* text-decoration: none; */
+	border-radius: 0px;
+	border: 0px;
+}
+.right .number{
+	margin: 20px;
+	width: 90%;
+	height: 60px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	padding-left: 5px;
+	/* text-align:left; */
+
+	/* border-color: #2d2d2de2; */
+	/* text-decoration: none; */
+	border-radius: 0px;
+	border: 0px;
+}
+.right .email{
+	margin: 20px;
+	width: 90%;
+	height: 60px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	padding-left: 5px;
+	/* text-align:left; */
+
+	/* border-color: #2d2d2de2; */
+	/* text-decoration: none; */
+	border-radius: 0px;
+	border: 0px;
+}
+.right .password{
+	margin: 20px;
+	width: 90%;
+	height: 60px;
+	font-family: Microsoft YaHei;
+	font-size: 20px;
+	padding-left: 5px;
+	/* text-align:left; */
+
+	/* border-color: #2d2d2de2; */
+	/* text-decoration: none; */
+	border-radius: 0px;
+	border: 0px;
+}
+.right .Submit{
+	background-color: rgb(50, 50, 50);
+	border-radius: 5px;
+	border:0px;
+	height: 60px;
+	width: 90%;
+	font-family: Microsoft YaHei;
+	color: rgb(250, 244, 244);
+	font-size: 20px;
+	margin:20px;
+	padding-left: 5px;
+}
+.Submit:hover{
+	background-color: rgb(74, 75, 75);
+}
+
+.right .login-content {
+	font-family: Microsoft YaHei;
+	color: rgb(180, 180, 180);
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #2d2d2de2;
+	margin-bottom: 20px;
+	padding-left:20px ;
+
+}
+.right .login-content a{
+	font-family: Microsoft YaHei;
+	color: rgb(180, 180, 180);
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #2d2d2de2;
+	margin-bottom: 20px;
+
+}
+.right .login-content a:hover{
+	color: #efe8e8;
+}
+
+@media only screen and (max-width:376px){
+	.whole-body {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.whole-body img {
+		height: 100%;
+
+	}
+	.left{
+		display:none;
+
+	}
+	.right{
+		width:100%;
+		height:85%;
+	}
+	.right .password{
+		margin-top:10px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.right .name{
+		margin-top:10px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.right .email{
+		margin-top:10px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.right .number{
+		margin-top:10px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.right .h3{
+		font-size:40px;
+	}
+	.right .Submit{
+		height:40px;}
+	.right .login-content { height:18px;}
+	.right .login-content { height:18px;}
+
+
+}
+

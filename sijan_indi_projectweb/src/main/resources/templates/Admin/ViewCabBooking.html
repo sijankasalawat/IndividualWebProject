@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Rooms</title>
+    <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">-->
+    <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" th:href="@{~/cs s/dashstyle.css}">
+    <link rel="stylesheet" th:href="@{~/css/navigation.css}">
+    <!--    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+    <script th:src="@{~/javascript/notification.js}" defer></script>
+    <link rel="stylesheet" th:href="@{~/css/adminBlogPage.css}">
+    <link rel="stylesheet" th:href="@{/css/viewCustomerlist.css}">
+    <link rel="shortcut icon" type="x-icon" th:href="@{/images/ServicesImages/logo.jpg}">
+    <style>
+        .dataTables_filter{
+            margin-right: 60px;
+        }
+        .dataTables_paginate{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .dataTables_length{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .dataTables_info{
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+         .contact_button{
+             background-color: #5041BC;
+             border-radius:20px ;
+             padding-top:7px ;
+             padding-bottom:7px ;
+             padding-left: 10px;
+             padding-right: 10px;
+             text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+<div th:replace="fragments/AdminFrag.html :: admin_navigation"></div>
+
+<table id="table_id">
+    <thead>
+    <tr>
+        <th>Booking_Id</th>
+        <th>Full Name</th>
+        <th>Phone</th>
+        <th>Car</th>
+        <th>People</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+        <!--            <th>Action</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="cab:${cab}">
+        <td th:text="${cab.id}"></td>
+        <td th:text="${cab.fullname}"></td>
+        <td th:text="${cab.phone}"></td>
+        <td th:text="${cab.car}"></td>
+        <td th:text="${cab.people}"></td>
+        <td th:text="${cab.date}"></td>
+        <td th:text="${cab.time}"></td>
+        <td> <a class="contact_button" th:href="@{~/admin/deletecab/}+${cab.id}" >delete</a></td>
+        <!--            <td> <a class="edit" th:href="@{~/admin/edit/}+${booking.id}" >edit</a></td>-->
+
+    </tr>
+    </tbody>
+
+</table>
+</html>
+

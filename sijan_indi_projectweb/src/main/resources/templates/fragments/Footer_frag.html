@@ -1,0 +1,31 @@
+<div th:fragment="footer" class="row">
+    <footer>
+        <div class="information">
+            <img th:src="@{~/images/logo-b.png}" alt="">
+            <h3>BHATTI (Newari Cuisine)</h3>
+            <p> <a href="#">0166100000</a></p>
+            <p> <a href="">Bhatti@gmail.com</a> </p>
+        </div>
+        <div class="quicklinks">
+            <h2>Quick links</h2>
+            <p> <a href="">Aboutbout</a></p>
+            <p> <a th:href="@{~/homepage/contact}">Contact</a></p>
+            <p> <a th:href="@{~/user/services}">Menu</a></p>
+        </div>
+        <div class="sociallinks">
+
+            <h4><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></h4>
+            <h4> <a href="https://www.facebook.com/"><i class="fab fa-twitter"></i></a> </h4>
+            <h4> <a href="https://www.facebook.com/"><i class="fab fa-instagram"></i></a></h4>
+            <h4> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></h4>
+        </div>
+        <div class="emailcontact">
+            <h3>Email us Your Quaries</h3>
+            <div class="email">
+                <input type="email" name="" id="" placeholder="  Enter your email">
+                <!-- <input type="submit" name="" id=""> -->
+                <button><a href="">Send</a></button>
+            </div>
+        </div>
+    </footer>
+</div>
