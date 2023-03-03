@@ -6,7 +6,7 @@
 
     </nav>
     <div id="mySidenav" class="sidenav">
-        <label class="logoInNav"> <a href="#"><img src="@{~/images/logo-b.png}" alt=""></a></label>
+        <label class="logoInNav"> <a href="#"><img th:src="@{~/images/logo-b.png}" alt=""></a></label>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="list-group-item" id="new" th:href="@{~/admin/list}">Order List</a>
 
