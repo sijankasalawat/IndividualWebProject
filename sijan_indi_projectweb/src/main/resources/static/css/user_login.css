@@ -183,6 +183,44 @@ body{
 .a-2:hover{
     color: #efe8e8;
 }
+@media only screen and (max-width:780px){
+    .whole-body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+    .whole-body img {
+        height: 100%;
+
+    }
+
+    .main-wrapper{
+
+        display: block;
+    }
+    .wrapper-left {
+        display: none;
+    }
+    .wrapper-right{
+        width:100%;
+        height:fit-content;
+
+
+    }
+    .head-box{
+        padding:80px 0 10px 0;
+    }
+    .head-box h1{
+        font-size:50px;
+    }
+    .head-box p{
+        font-size:40px;
+    }
+
+
+
+}
 
 
 @media only screen and (max-width:376px) {
@@ -233,7 +271,7 @@ body{
     }
 
     .a-2 {
-        font-size: 18 pxk
+        font-size: 18px;
     }
 
     .login-button {

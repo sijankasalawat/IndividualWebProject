@@ -1,9 +1,4 @@
-:root{
-	font-size: 100%;
-	font-size: 16px;
-	line-height:1.5;
-	--primary-blue: #233975;
-}
+
 *{
 	margin:0
 }
@@ -181,6 +176,37 @@ body{
 }
 .right .login-content a:hover{
 	color: #efe8e8;
+}
+@media only screen and (max-width:780px){
+	.whole-body {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.whole-body img {
+		height: 100%;
+
+	}
+	.left{
+		display:none}
+	.right{
+		width:100%;
+		height:fit-content;
+	}
+	.head-box{
+		padding-top:90px;
+	}
+	.head-box h1{
+		font-size:50px;
+
+	}
+	.head-box P{
+		font-size:40px;
+	}
+
+
+
 }
 
 @media only screen and (max-width:376px){
